@@ -7,6 +7,16 @@ h2 {
   font-family: "Roboto Slab", "Open Sans", "Roboto", sans-serif;
 }
 
+button,
+input {
+  appearance: none;
+}
+
+button {
+  border: none;
+  background-color: lightgray;
+}
+
 body {
   height: 100vh;
   width: 100vw;
@@ -32,11 +42,14 @@ body {
   grid-template: 1fr 4fr 1fr/ 1fr;
   justify-content: center;
   align-content: center;
-
+  padding: 10px;
   border-radius: 15px 0 0 15px;
+  border: solid;
 }
 
-
+#main-nav > div {
+  padding: 10px 0;
+}
 
 .content-container {
   display: grid;
@@ -48,14 +61,54 @@ body {
 .top-bar {
   display: grid;
   align-items: center;
+  border: solid;
+  grid-template: 2fr 2fr/4fr 1fr 2fr;
 }
+
+#search-bar {
+  padding-left: 10px;
+  display: grid;
+  grid-template: 1fr/ auto 1fr;
+  grid-column: 1/2;
+}
+
+#search {
+  border-radius: 10px;
+  border: 0;
+}
+
+#glass {
+  height: 25px;
+}
+
+#profile {
+  display: grid;
+  grid-template: 1fr/ repeat(3,1fr);
+  justify-items: center;
+  padding-right: 1.5em;
+  grid-column: 3/4;
+  align-items: center;
+}
+
+#banner {
+  display: grid;
+  grid-template: 1fr/repeat(4, 1fr);
+}
+
+#banner>div:nth-child(1) {
+  display: grid;
+  justify-items: end;
+  align-items: center;
+  padding-right: 15px;
+}
+
 
 .content {
   display: grid;
   grid-template-columns: 3fr 1fr;
+  border: solid;
 }
 
 .projects {
-    display: grid;
+  display: grid;
 }
-
