@@ -2,7 +2,8 @@ body,
 html,
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0px;
   padding: 0px;
   font-family: "Roboto Slab", "Open Sans", "Roboto", sans-serif;
@@ -146,3 +147,14 @@ border-radius: 15px;
   background-color: gray;
 }
 
+#right-bar {
+  display: grid;
+  grid-template:repeat()/ auto;
+  grid-row: 1/ 3;
+  grid-column: 2/3;
+}
+
+#right-bar > * {
+  display: grid;
+  grid-template: repeat(2, .3fr 1.5fr)/ 1fr;
+}
