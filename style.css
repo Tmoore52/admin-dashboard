@@ -147,14 +147,21 @@ border-radius: 15px;
   background-color: gray;
 }
 
-#right-bar {
-  display: grid;
-  grid-template:repeat()/ auto;
-  grid-row: 1/ 3;
-  grid-column: 2/3;
+.card-content {
+  
 }
 
-#right-bar > * {
+#right-bar {
   display: grid;
-  grid-template: repeat(2, .3fr 1.5fr)/ 1fr;
+  grid-template: repeat(2, auto 1fr)/ 1fr;
+  grid-row: 1/ 3;
+  grid-column: 2/3;
+  padding: 5px 15px;
+}
+#right-bar>div>h3{
+  padding: 10px 0 ;
+}
+
+#announcements, #trending{
+  display: grid;
 }
